@@ -1,0 +1,14 @@
+[tools]
+ansible = "11"
+go = "1.24.5"
+
+[tasks.init]
+description = 'Command to run after the first install'
+run = "go mod tidy"
+
+[tasks.build]
+run = "go build"
+
+[tasks.install]
+run = "mv {{ cookiecutter.cli_binary_name }} ~/.local/bin"
+depends = "build"

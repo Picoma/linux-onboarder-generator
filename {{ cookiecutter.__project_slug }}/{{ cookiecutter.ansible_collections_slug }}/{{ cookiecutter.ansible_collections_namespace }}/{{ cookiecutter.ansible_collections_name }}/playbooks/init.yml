@@ -1,0 +1,8 @@
+---
+- name: Init {{ cookiecutter.cli_binary_name }}
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Good intallation assertion
+      ansible.builtin.debug:
+        msg: "Configuring workstation..."

@@ -1,0 +1,19 @@
+{
+  "__project_slug": "repos",
+  "project_name": "configurator",
+  "cli_slug": "{{ cookiecutter.project_name }}-cli",
+  "ansible_collections_slug": "{{ cookiecutter.project_name }}-ansible-collections",
+  
+  "git_root_url": "github.com",
+  "git_namespace": "corpo",
+  "git_cli_url": "{{ cookiecutter.git_root_url }}/{{ cookiecutter.git_namespace }}/{{ cookiecutter.cli_slug }}",
+  "git_ansible_collections_url": "{{ cookiecutter.git_root_url }}/{{ cookiecutter.git_namespace }}/{{ cookiecutter.ansible_collections_slug }}",
+
+  "cli_binary_name": "{{ cookiecutter.cli_slug }}",
+  "cli_package_name": "{{ cookiecutter.git_cli_url }}/{{ cookiecutter.cli_binary_name}}",
+
+  "ansible_collections_namespace": "{{ cookiecutter.git_namespace }}",
+  "ansible_collections_name": "{{ cookiecutter.project_name.replace('-', '_') }}",
+  
+  "author": "your name <example@domain.com>"
+}

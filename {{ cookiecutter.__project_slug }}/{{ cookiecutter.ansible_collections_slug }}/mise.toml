@@ -1,0 +1,17 @@
+[tools]
+uv = "latest"
+
+[env]
+_.python.venv = { path = ".venv" }
+
+[tasks.init]
+description = 'First install of the project'
+run = [
+    "uv venv",
+    "uv sync",
+    "source .venv/bin/activate"
+]
+
+[tasks.build]
+description = 'Build the collection into a zip format'
+run = 'ansible-galaxy collection build {% raw %}{{arg(name="collection_path", var=true)}}{% endraw %}'

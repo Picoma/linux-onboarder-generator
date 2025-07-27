@@ -1,0 +1,13 @@
+[project]
+name = "{{ cookiecutter.ansible_collections_slug }}"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+dependencies = [
+    "ansible",
+]
+
+[dependency-groups]
+dev = [
+    "ansible-dev-tools",
+]
