@@ -6,7 +6,7 @@ Tooling to onboard Linux workstations without hassle through an intuitive CLI.
 ## Installation
 To install this tool, you can use the following command:
 ```bash
-curl {{ cookiecutter.cli_url }}/install.sh | bash
+curl {{ cookiecutter.git_cli_url }}/install.sh | bash
 ```
 This will initialize the tool, as well as configure your workstation.
 
